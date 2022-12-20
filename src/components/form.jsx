@@ -98,8 +98,35 @@ export default function Form() {
                       />
                   </div>
               </div>
-              <button type='submit' className='btn btn-outline w-full flex-end mt-15'>Submit</button>
+              
+              <a href="#my-modal-2" className='btn btn-outline w-full flex-end mt-15'>
+              Submit
+                </a>
           </form>
+  <div className="modal" id="my-modal-2">
+    <div className="modal-box">
+      <h3 className="font-bold text-lg">
+        Congratulations Your Location has been added !!
+        We will contact you shortly!!
+      </h3>
+      <center>
+      <lottie-player
+  src="https://assets5.lottiefiles.com/packages/lf20_rapsgnzz.json"
+  speed={1}
+  style={{ width: 300, height: 300 }}
+  loop=""
+  className="justify-center"
+
+  autoPlay=""
+/>
+</center>
+      <div className="modal-action">
+        <a href="#" className="btn">
+          Yay!
+        </a>
+      </div>
+    </div>
+  </div>
   
     </div>
   )
